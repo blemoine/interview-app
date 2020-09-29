@@ -7,3 +7,7 @@ export async function listAllUsersInDb(): Promise<User[]> {
   );
   return rows.map(({ id, name, creationDate }) => ({ id, name, creationDate: new Date(creationDate) }));
 }
+
+export function craeteUserInDb(id, name) {
+  executeQuery(`INSERT INTO users VALUES (${name}, ${id}, ${new Date()})`);
+}

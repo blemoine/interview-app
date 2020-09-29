@@ -14,3 +14,4 @@ router.use(compression());
 router.use(parser.json({ limit: "12mb" }));
 
 router.get("/users", handleControllerError(listUsersController));
+router.post("/users/create", createUserCtrl)

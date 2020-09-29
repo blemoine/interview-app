@@ -6,3 +6,7 @@ export async function listUsersController(_req: Request, res: Response): Promise
 
   res.status(200).json(users);
 }
+
+export function createUserCtrl(req, res) {
+
+}
