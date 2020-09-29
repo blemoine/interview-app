@@ -10,9 +10,9 @@ export function startDatabase() {
   });
 
   database.serialize(() => {
-    database.run("CREATE TABLE users (id TEXT, name TEXT, birthday DATETIME)");
-    database.run("INSERT INTO users(id, name,birthday) VALUES ('111', 'Georges', '2020-02-03T04:05:06Z')");
-    database.run("INSERT INTO users(id, name,birthday) VALUES ('222', 'Peter', '2012-12-13T14:15:16Z')");
+    database.run("CREATE TABLE users (id TEXT, name TEXT, creationDate DATETIME)");
+    database.run("INSERT INTO users(id, name,creationDate) VALUES ('111', 'Georges', '2020-02-03T04:05:06Z')");
+    database.run("INSERT INTO users(id, name,creationDate) VALUES ('222', 'Peter', '2012-12-13T14:15:16Z')");
   });
 
   return database;

@@ -14,6 +14,3 @@ router.use(compression());
 router.use(parser.json({ limit: "12mb" }));
 
 router.get("/users", handleControllerError(listUsersController));
-//router.post('/users', handleControllerError(createUserController));
-//router.get('/users/:id', handleControllerError(getUserByIdController));
-//router.delete('/users/:id', handleControllerError(deleteUserById));
