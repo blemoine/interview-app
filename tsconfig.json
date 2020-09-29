@@ -1,0 +1,16 @@
+{
+  "compilerOptions": {
+    "esModuleInterop": true,
+    "module": "CommonJS",
+    "moduleResolution": "Node",
+    "rootDir": "src",
+    "outDir": "dist",
+    "target": "ES2019",
+    "strict": true,
+    "noUnusedLocals": true,
+    "noUnusedParameters": true,
+    "lib": ["es2020.string", "ES2019"],
+    "typeRoots": ["./src/@types", "./node_modules/@types"]
+  },
+  "exclude": ["node_modules", "coverage", "dump", ".github", ".circleci", ".vscode", "test", "dist"]
+}
